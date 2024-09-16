@@ -116,8 +116,10 @@ pre {
     top: 0;
     left: 12px;
     margin-top: 12px;
-    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #9c27b0;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 9c27b0;
+    /* -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f; */
+    /* box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f; */
 }
 
 code {
@@ -241,7 +243,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right,#9c27b0bf 0%, rgba(156, 39, 176, 0.75) 100%);
+    /* background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
 }
 
 .text-color {
@@ -257,7 +260,8 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #9c27b0 0%, #9c27b0 100%);
+    /* background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
     opacity: 0.8;
 }
 
@@ -1100,7 +1104,8 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #9c27b0;
+    /* color: #42b983; */
     text-decoration: underline;
 }
 
@@ -1179,7 +1184,8 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #9c27b0;
+    /* color: #42b983; */
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
@@ -1811,8 +1817,10 @@ thead {
 
 .other-skills .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-    border: 1px solid #4cbf30;
+    background: linear-gradient(to right, #9c27b0 0%, #9c27b0 100%);
+    /* background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    border: 1px solid #9c27b0;
+    /* border: 1px solid #4cbf30; */
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
 
@@ -1908,7 +1916,8 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #9c27b0 0%, #9c27b0 100%);
+    /* background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%); */
     width: 48px;
     height: 48px;
 }
