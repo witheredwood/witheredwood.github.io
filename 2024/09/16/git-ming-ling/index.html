@@ -396,10 +396,10 @@
 <span class="token function">git</span> <span class="token function">diff</span> <span class="token parameter variable">--stat</span>    <span class="token comment"># 查看摘要</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="D-查看状态"><a href="#D-查看状态" class="headerlink" title="D. 查看状态"></a>D. 查看状态</h3><p>查看本地文件所处的状态，是未add到暂存区，已add到暂存区还未commit，已commit</p>
-<pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git status        # 查看本地文件状态<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> status        <span class="token comment"># 查看本地文件状态</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="/iamages/git-status-1.png" alt="img"></p>
-<p><img src="/iamages/git-status-2.png" alt="img"></p>
+<p><img src="/images/git-status-1.png" alt="img"></p>
+<p><img src="/images/git-status-2.png" alt="img"></p>
 <h3 id="E-下载"><a href="#E-下载" class="headerlink" title="E. 下载"></a>E. 下载</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone <span class="token punctuation">[</span>仓库地址<span class="token punctuation">]</span>    <span class="token comment"># 下载默认分支的仓库代码</span>
 <span class="token function">git</span> clone <span class="token parameter variable">-b</span> web <span class="token punctuation">[</span>仓库地址<span class="token punctuation">]</span>     <span class="token comment"># 下载web分支上的仓库代码</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
@@ -407,61 +407,61 @@
 <span class="token function">git</span> checkout <span class="token parameter variable">-b</span> <span class="token punctuation">[</span>新分支名<span class="token punctuation">]</span>      <span class="token comment"># 创建新分支并切换到新分支</span>
 <span class="token function">git</span> checkout <span class="token parameter variable">-b</span> <span class="token punctuation">[</span>新分支名<span class="token punctuation">]</span> <span class="token punctuation">[</span>origin/分支<span class="token punctuation">]</span>        <span class="token comment"># 基于远程仓库中的分支创建新分支</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="2）查看分支"><a href="#2）查看分支" class="headerlink" title="2）查看分支"></a>2）查看分支</h4><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git branch      # 查看本地所有分支及当前所在分支
-git branch -r     # 查看远程所有分支
-git branch -a     # 查看本地和远程所有分支
+<h4 id="2）查看分支"><a href="#2）查看分支" class="headerlink" title="2）查看分支"></a>2）查看分支</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch      <span class="token comment"># 查看本地所有分支及当前所在分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-r</span>     <span class="token comment"># 查看远程所有分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-a</span>     <span class="token comment"># 查看本地和远程所有分支</span>
 
-git branch -vv      # 查看本地分支对应的远程分支，没有的不显示<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">git</span> branch <span class="token parameter variable">-vv</span>      <span class="token comment"># 查看本地分支对应的远程分支，没有的不显示</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/iamages/git-branch-vv.png" alt="img"></p>
-<h4 id="3）删除分支"><a href="#3）删除分支" class="headerlink" title="3）删除分支"></a>3）删除分支</h4><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git branch -d [分支名]       # 删除本地分支
-git push origin --delete [分支名]        # 删除远程分支<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="/images/git-branch-vv.png" alt="img"></p>
+<h4 id="3）删除分支"><a href="#3）删除分支" class="headerlink" title="3）删除分支"></a>3）删除分支</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch <span class="token parameter variable">-d</span> <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>       <span class="token comment"># 删除本地分支</span>
+<span class="token function">git</span> push origin <span class="token parameter variable">--delete</span> <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>        <span class="token comment"># 删除远程分支</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="4）修改分支名"><a href="#4）修改分支名" class="headerlink" title="4）修改分支名"></a>4）修改分支名</h4><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git branch -m [旧分支名] [新分支名]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="4）修改分支名"><a href="#4）修改分支名" class="headerlink" title="4）修改分支名"></a>4）修改分支名</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch <span class="token parameter variable">-m</span> <span class="token punctuation">[</span>旧分支名<span class="token punctuation">]</span> <span class="token punctuation">[</span>新分支名<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="G-追踪"><a href="#G-追踪" class="headerlink" title="G. 追踪"></a>G. 追踪</h3><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell"># 创建本地新分支 main 并追踪远程 main 分支
-git branch --track main origin/main
-# 本地已有 main 分支，追踪远程 main 分支
-git branch --set-upstream-to=origin/main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="G-追踪"><a href="#G-追踪" class="headerlink" title="G. 追踪"></a>G. 追踪</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 创建本地新分支 main 并追踪远程 main 分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">--track</span> main origin/main
+<span class="token comment"># 本地已有 main 分支，追踪远程 main 分支</span>
+<span class="token function">git</span> branch --set-upstream-to<span class="token operator">=</span>origin/main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="H-合并"><a href="#H-合并" class="headerlink" title="H. 合并"></a>H. 合并</h3><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git rebase        # 把当前分支合并到某分支
-git rebase main   # 把当前分支合并到main分支<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="H-合并"><a href="#H-合并" class="headerlink" title="H. 合并"></a>H. 合并</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> rebase        <span class="token comment"># 把当前分支合并到某分支</span>
+<span class="token function">git</span> rebase main   <span class="token comment"># 把当前分支合并到main分支</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="I-历史记录"><a href="#I-历史记录" class="headerlink" title="I. 历史记录"></a>I. 历史记录</h3><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git log 
-git log --oneline    # 输出简要信息
-git log -n      # 输出最近的n条记录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="I-历史记录"><a href="#I-历史记录" class="headerlink" title="I. 历史记录"></a>I. 历史记录</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> log 
+<span class="token function">git</span> log <span class="token parameter variable">--oneline</span>    <span class="token comment"># 输出简要信息</span>
+<span class="token function">git</span> log <span class="token parameter variable">-n</span>      <span class="token comment"># 输出最近的n条记录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="J-回滚"><a href="#J-回滚" class="headerlink" title="J. 回滚"></a>J. 回滚</h3><h4 id="1）回退到某commit-all"><a href="#1）回退到某commit-all" class="headerlink" title="1）回退到某commit (all)"></a>1）回退到某commit (all)</h4><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git reset --hard [commit id]     # 本地回退到某个记录
-git push origin main    # 远程回退到相同版本
+<h3 id="J-回滚"><a href="#J-回滚" class="headerlink" title="J. 回滚"></a>J. 回滚</h3><h4 id="1）回退到某commit-all"><a href="#1）回退到某commit-all" class="headerlink" title="1）回退到某commit (all)"></a>1）回退到某commit (all)</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> reset <span class="token parameter variable">--hard</span> <span class="token punctuation">[</span>commit id<span class="token punctuation">]</span>     <span class="token comment"># 本地回退到某个记录</span>
+<span class="token function">git</span> push origin main    <span class="token comment"># 远程回退到相同版本</span>
 
-# 使用这种方式回滚
-git revert HEAD^        # 回退到上一个版本，以前的提交还存在，状态回退
-git push<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment"># 使用这种方式回滚</span>
+<span class="token function">git</span> revert HEAD^        <span class="token comment"># 回退到上一个版本，以前的提交还存在，状态回退</span>
+<span class="token function">git</span> push<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="2）一个文件回退到某个-commit"><a href="#2）一个文件回退到某个-commit" class="headerlink" title="2）一个文件回退到某个 commit"></a>2）一个文件回退到某个 commit</h4><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell"># 通过 git log 查找要回退到的版本的id 
-git checkout [commit id]  [文件路径]        # 会影响本地的文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="2）一个文件回退到某个-commit"><a href="#2）一个文件回退到某个-commit" class="headerlink" title="2）一个文件回退到某个 commit"></a>2）一个文件回退到某个 commit</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 通过 git log 查找要回退到的版本的id </span>
+<span class="token function">git</span> checkout <span class="token punctuation">[</span>commit id<span class="token punctuation">]</span>  <span class="token punctuation">[</span>文件路径<span class="token punctuation">]</span>        <span class="token comment"># 会影响本地的文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="3）修改已经push的commit信息"><a href="#3）修改已经push的commit信息" class="headerlink" title="3）修改已经push的commit信息"></a>3）修改已经push的commit信息</h4><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git commit --amend  # 进入 vim 编辑器，修改提交信息
-git push -f    # 强制提交，这次提交纪录会覆盖上一次提交记录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="3）修改已经push的commit信息"><a href="#3）修改已经push的commit信息" class="headerlink" title="3）修改已经push的commit信息"></a>3）修改已经push的commit信息</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit <span class="token parameter variable">--amend</span>  <span class="token comment"># 进入 vim 编辑器，修改提交信息</span>
+<span class="token function">git</span> push <span class="token parameter variable">-f</span>    <span class="token comment"># 强制提交，这次提交纪录会覆盖上一次提交记录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h3 id="K-隐藏与恢复"><a href="#K-隐藏与恢复" class="headerlink" title="K. 隐藏与恢复"></a>K. 隐藏与恢复</h3><p>使用场景：当前代码有修改，但是需要修改另外一处问题（1），同时不想当前的修改丢失。可以暂时隐藏当前代码的修改，解决完问题（1）之后，再恢复隐藏的修改。</p>
-<pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">git stash        # 隐藏。保存未完成工作而不提交
-git stash pop           # 恢复之前隐藏的文件
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> stash        <span class="token comment"># 隐藏。保存未完成工作而不提交</span>
+<span class="token function">git</span> stash pop           <span class="token comment"># 恢复之前隐藏的文件</span>
 
-git stash list        # 列出多个隐藏处
-git stash drop        # 删除隐藏列表中最新的一个（也是最上面的一个），等价于git stash drop stash@{0}
-git stash drop stash@{stashId}    # 删除隐藏列表中的某一个<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">git</span> stash list        <span class="token comment"># 列出多个隐藏处</span>
+<span class="token function">git</span> stash drop        <span class="token comment"># 删除隐藏列表中最新的一个（也是最上面的一个），等价于git stash drop stash@{0}</span>
+<span class="token function">git</span> stash drop stash@<span class="token punctuation">{</span>stashId<span class="token punctuation">}</span>    <span class="token comment"># 删除隐藏列表中的某一个</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="L-删除远程仓库中的文件夹"><a href="#L-删除远程仓库中的文件夹" class="headerlink" title="L. 删除远程仓库中的文件夹"></a>L. 删除远程仓库中的文件夹</h3><pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell">dir     # 查看当前目录下的文件夹
-git rm -r --cached .idea    # 删除本地缓存区中的.idea文件夹
-git commit -m "删除.idea文件夹"   # 提交
-git push origin main    # 推送到远程仓库的main分支<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="L-删除远程仓库中的文件夹"><a href="#L-删除远程仓库中的文件夹" class="headerlink" title="L. 删除远程仓库中的文件夹"></a>L. 删除远程仓库中的文件夹</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">dir</span>     <span class="token comment"># 查看当前目录下的文件夹</span>
+<span class="token function">git</span> <span class="token function">rm</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">--cached</span> .idea    <span class="token comment"># 删除本地缓存区中的.idea文件夹</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"删除.idea文件夹"</span>   <span class="token comment"># 提交</span>
+<span class="token function">git</span> push origin main    <span class="token comment"># 推送到远程仓库的main分支</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="2-出现的问题"><a href="#2-出现的问题" class="headerlink" title="2. 出现的问题"></a>2. 出现的问题</h2><h3 id="A-10054"><a href="#A-10054" class="headerlink" title="A. 10054"></a>A. 10054</h3><blockquote>
 <p>fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/fmtlib/fmt.git/">https://github.com/fmtlib/fmt.git/</a>‘: OpenSSL SSL_read: Connection was reset, errno 10054</p>
 </blockquote>
-<pre class="line-numbers language-Shell" data-language="Shell"><code class="language-Shell"># 解除ssl验证
-git config --global http.sslVerify "false"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 解除ssl验证</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> http.sslVerify <span class="token string">"false"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h3 id="B-443"><a href="#B-443" class="headerlink" title="B. 443"></a>B. 443</h3><blockquote>
 <p>Failed to connect to github.com port 443 after 21106 ms: Timed out</p>
