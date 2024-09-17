@@ -293,7 +293,8 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
-    height: 45px;
+    /* height: 45px; */
+    height: 2.3rem;
     vertical-align: middle;
     padding-bottom: 6px;
 }
