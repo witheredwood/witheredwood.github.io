@@ -312,7 +312,7 @@ header .brand-logo .logo-span {
 /* 针对手机的字体设置 */
 @media (max-width: 768px) {
     header .brand-logo .logo-span {
-        font-size: 1rem; /* 手机上的字体大小 */
+        font-size: 1.2rem; /* 手机上的字体大小 */
     }
 }
 
