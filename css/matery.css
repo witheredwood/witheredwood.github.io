@@ -568,7 +568,8 @@ header .go-back i {
     left: 0;
     top: 0;
     content: "";
-    background: rgba(156, 39, 176, 0.5);
+    /* 首页背景遮罩颜色 */
+    background: rgba(156, 39, 176, 0.4);
 }
 
 .bg-cover .container {
@@ -596,13 +597,6 @@ header .go-back i {
     font-size: 2.5rem;
     font-weight: 400;
 }
-/* 首页背景颜色 */
-/* rainbow {
-    background: rgba(156, 39, 176, 0.75);
-    background: linear-gradient(45deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-    background: -moz-linear-gradient(135deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-} */
 
 /* @-webkit-keyframes rainbow {
     0%,
