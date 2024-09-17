@@ -5,6 +5,12 @@
         width: 90%;
     }
 }
+/*小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 601px) {
+    .container {
+        width: 90%;
+    }
+}
 
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
@@ -301,6 +307,13 @@ header .brand-logo .logo-img {
 
 header .brand-logo .logo-span {
     font-size: 1.6rem;
+}
+
+/* 针对手机的字体设置 */
+@media (max-width: 768px) {
+    header .brand-logo .logo-span {
+        font-size: 1.2rem; /* 手机上的字体大小 */
+    }
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
