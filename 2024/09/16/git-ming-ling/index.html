@@ -389,7 +389,7 @@
 
 <p>例子：执行完 <code>git add .</code> 之后，发现文件夹 <code>.vscode</code> 不需要提交，所以需要把 <code>.vscode</code> 文件夹从本地暂存区中移出。查询当前文件状态，如下：</p>
 <p><img src="/images/git-status-before.png"></p>
-<p>执行完 <code>git reset &lt;文件名&gt;</code> 后的状态，如下：</p>
+<p>执行完 <code>git reset .vscode</code> 后的状态，如下：</p>
 <p><img src="/images/git-status-after.png"></p>
 <h3 id="C-查看不同"><a href="#C-查看不同" class="headerlink" title="C. 查看不同"></a>C. 查看不同</h3><p>在提交信息前可以查看修改的地方，是否与自己想要的一样</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">diff</span>        <span class="token comment"># 查看尚未缓存的改动，git add 前查看</span>
