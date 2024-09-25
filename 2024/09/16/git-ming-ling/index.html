@@ -384,6 +384,13 @@
 <span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"修改信息"</span>        <span class="token comment"># 提交本地暂存区中的内容到本地仓库</span>
 <span class="token function">git</span> push origin main        <span class="token comment"># 把本地仓库中的修改推到远程仓库</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
+<p>如果需要撤销已add的单文件或单文件夹，执行下面的命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> reset <span class="token operator">&lt;</span>文件名<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>例子：执行完 <code>git add .</code> 之后，发现文件夹 <code>.vscode</code> 不需要提交，所以需要把 <code>.vscode</code> 文件夹从本地暂存区中移出。查询当前文件状态，如下：</p>
+<p><img src="/images/git-status-before.png"></p>
+<p>执行完 <code>git reset &lt;文件名&gt;</code> 后的状态，如下：</p>
+<p><img src="/images/git-status-after.png"></p>
 <h3 id="C-查看不同"><a href="#C-查看不同" class="headerlink" title="C. 查看不同"></a>C. 查看不同</h3><p>在提交信息前可以查看修改的地方，是否与自己想要的一样</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">diff</span>        <span class="token comment"># 查看尚未缓存的改动，git add 前查看</span>
 <span class="token function">git</span> <span class="token function">diff</span> <span class="token parameter variable">--cached</span>   <span class="token comment"># 查看已缓存的改动，git add 之后查看</span>
@@ -851,7 +858,7 @@
             <!-- 访问统计 -->
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.1k</span>&nbsp;字
+                class="white-color">7.2k</span>&nbsp;字
             
             
             
