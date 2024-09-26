@@ -399,7 +399,7 @@
 </ul>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ENGINE</span> <span class="token operator">=</span> <span class="token keyword">InnoDB</span> <span class="token keyword">AUTO_INCREMENT</span> <span class="token operator">=</span> <span class="token number">11</span> <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> <span class="token operator">=</span> utf8 <span class="token keyword">COLLATE</span> <span class="token operator">=</span> utf8_general_ci ROW_FORMAT <span class="token operator">=</span> Compact<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>这句话是对数据库中的字符集设置，默认的引擎是<code>InnoDB</code>。</p>
+<p>这句话是对数据库中的字符集设置，字符使用<code>utf8</code>编码，并且默认的引擎是<code>InnoDB</code>。</p>
 <h3 id="B-删表"><a href="#B-删表" class="headerlink" title="B. 删表"></a>B. 删表</h3><p>删除表的SQL语句如下：</p>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> <span class="token identifier"><span class="token punctuation">`</span>user_info<span class="token punctuation">`</span></span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -448,7 +448,7 @@
 <span class="token keyword">END</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>该过程函数执行后，数据库的数据如下：</p>
-<p><img src="D:\typora_picture\insertUserData.png"></p>
+<p><img src="/images/insertUserData.png"></p>
 <p>Navicat中执行过程函数的地方在，软件上方工具栏中 <code>函数 </code> -&gt; <code>新建函数（过程）</code>  ，在页面中写入SQL语句，保存后即可运行。</p>
 <h3 id="B-解析"><a href="#B-解析" class="headerlink" title="B. 解析"></a>B. 解析</h3><h4 id="1-建函数"><a href="#1-建函数" class="headerlink" title="1. 建函数"></a>1. 建函数</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">DEFINER</span><span class="token operator">=</span><span class="token identifier"><span class="token punctuation">`</span>root<span class="token punctuation">`</span></span><span class="token variable">@`localhost`</span> <span class="token keyword">PROCEDURE</span> <span class="token identifier"><span class="token punctuation">`</span>insertUserData<span class="token punctuation">`</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
