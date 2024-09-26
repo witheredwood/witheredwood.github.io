@@ -583,7 +583,7 @@ header .go-back i {
     top: 0;
     content: "";
     /* 首页背景遮罩颜色 */
-    background: rgba(156, 39, 176, 0.4);
+    background: rgba(156, 39, 176, 0.5);
 }
 
 .bg-cover .container {
